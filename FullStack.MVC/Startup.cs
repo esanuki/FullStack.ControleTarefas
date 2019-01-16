@@ -1,9 +1,13 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FullStack.ControleTarefas.API
+namespace FullStack.MVC
 {
     public class Startup
     {
@@ -23,7 +27,7 @@ namespace FullStack.ControleTarefas.API
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World teste 123!");
+                await context.Response.WriteAsync("Hello World!");
             });
         }
     }
